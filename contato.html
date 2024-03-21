@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="patterns.css">
+    <title>Contato</title>
+</head>
+<body>
+    <h1>
+        Fale Conosco!
+    </h1>
+    <div class="forms">
+        <h2>Por favor preencha os dados abaixo:</h2>
+        <form method="post" enctype="UTF-8">
+            <label for="name" id="label"> Nome:</label>
+            <input type="text" id="name" name="name" >
+            <label for="email" id="label"> Email:</label>
+            <input type="email" id="email" name="emai" > <br>
+            <label for="subject" id="label"> Assunto:</label>
+            <input type="text" id="subject" name="subject" > <br>
+            <label for="message" id="label"> Mensagem:</label> <br>
+            <textarea name="message" id="message" cols="60" rows="10"></textarea><br>
+            <button type="submit" onclick="validateForm(name, email, subject, message)">Enviar</button>
+            <button type="reset">Apagar</button>
+        </form>
+    </div>
+    <div class="info">
+        <h2>Outras maneiras de Contato</h2>
+        <span>
+            Tel: (42) 9946-5012 <br>
+            Email: <a href="mailto:EmpresaPadrao@hotmail.com" mail>EmpresaPadrao@hotmail.com</a> <br>
+            Endereço: Av. Bonifácio Vilela, 633 - Centro, Ponta Grossa - PR, 84010-330
+        </span>
+        <h2>Visite nossas Filiais</h2>
+        <ul>
+            <li>
+                <span>
+                    São Paulo: <br>
+                    R. Domingos de Morais, 1873 - Vila Mariana, São Paulo - SP, 04009-003
+                </span>
+            </li>
+            <li>
+                <span>
+                    Rio de Janeiro: <br>
+                    Av. Rio Branco, 219 - Centro, Rio de Janeiro - RJ, 20040-008
+                </span> <br>
+            </li>
+            <li>
+                <span>
+                    Belo Horizonte: <br>
+                    Praça da Liberdade, 21 - Savassi, Belo Horizonte - MG, 30140-010
+                </span>
+            </li>
+        </ul>
+        
+    </div>
+    <script>
+        function validateForm(name , email, subject, message){
+            if(name === "" || email === "" || subject === "" || message === ""){
+                alert("Campos vazios!");
+            }
+        };
+    </script>
+</body>
+</html>

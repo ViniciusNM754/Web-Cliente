@@ -1,0 +1,77 @@
+#text p, #text h2{
+    margin: 12px;
+}
+#name{
+    border-radius: 5px;
+}
+#email{
+    border-radius: 5px;
+}
+#subject{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+#message{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+#img1{
+    float: left;
+    margin: 50 50 50px;
+}
+body{
+    background-color: darkslategray;
+}
+
+h1{
+    color:white;
+    text-align: center;
+}
+
+h2{
+    text-align: left;
+    color:white;
+}
+
+p{
+    color:whitesmoke;
+}
+label{
+    color: white;
+}
+button{
+    color: white;
+    background-color: grey;
+}
+span{
+    color: whitesmoke;
+}
+ul{
+    color: white;
+}
+#products{
+    border-collapse: collapse;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#products td, #products th{
+    border: 1px solid;
+    padding: 8px;
+    color: whitesmoke;
+}
+
+#products tr:nth-child(odd){
+    background-color: lightslategray;
+}
+
+#products th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: slateblue;
+    color: white;
+}
