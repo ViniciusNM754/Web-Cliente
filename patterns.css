@@ -23,6 +23,9 @@
 }
 body{
     background-color: darkslategray;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1{
@@ -74,4 +77,24 @@ ul{
     text-align: center;
     background-color: slateblue;
     color: white;
+}
+
+footer{
+    margin: auto 0;
+    text-align: center;
+    font-size: small;
+}
+
+#menu button{
+    size: 5000;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    align-items: left;
+    align-content: space-between;
+    background-color: lightgreen;
 }
