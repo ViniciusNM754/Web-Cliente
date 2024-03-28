@@ -5,6 +5,13 @@
     <title>Contato</title>
 </head>
 <body>
+    <ul>
+        <li><a href="pag1.html">Quem Somos</a></li>
+        <li><a href="pag2.html">Sobre Nós</a></li>
+        <li><a class="active" href="contato.html">Fale Conosco</a></li>
+        <li><a href="produto.html">Nossos Produtos</a></li>
+        <li style="float:right"><a href="index.html">Menu</a></li>
+    </ul>
     <main>
         <h1>        
             Fale Conosco!
@@ -25,7 +32,7 @@
             </form>
         </div>
     </main>
-    <aside class="info">
+    <div class="info">
         <h2>Visite nossas Filiais</h2>
         <ul>
             <li>
@@ -48,7 +55,7 @@
             </li>
         </ul>
         
-    </aside>
+    </div>
     <script>
         function validateForm(name , email, subject, message){
             if(name === "" || email === "" || subject === "" || message === ""){
