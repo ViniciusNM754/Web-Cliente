@@ -80,8 +80,12 @@ ul{
     color: white;
 }
 
-#info li{
+#info span{
+    font-size: 125%;
+}
 
+#info ul{
+    list-style-type: square;
 }
 
 footer{
@@ -114,7 +118,7 @@ a{
     border: 1px solid;
 }
 
-ul {
+#navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -122,11 +126,11 @@ ul {
     background-color: #333;
 }
   
-li {
+#navbar li {
     float: left;
 }
   
-li a {
+#navbar li a {
     display: block;
     color: white;
     text-align: center;
@@ -134,7 +138,7 @@ li a {
     text-decoration: none;
 }
   
-li a:hover:not(.active) {
+#navbar li a:hover:not(.active) {
     background-color: rgb(121,223,180);
   }
 .active {
