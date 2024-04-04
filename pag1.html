@@ -11,6 +11,8 @@
 <body>
     <div id="navbar">
         <ul>
+            <li><img src="logos/logoLight.png" alt="logo-navbar" id="logo" style="width: 50px;height: 50px;"></li>
+            <li><img src="logos/nameLight.png" alt="name-navbar" id="logo" style="width: 100px;height: 50px;"></li>
             <li><a class="active" href="pag1.html">Quem Somos</a></li>
             <li><a href="pag2.html">Sobre Nós</a></li>
             <li><a href="contato.html">Fale Conosco</a></li>
@@ -19,37 +21,17 @@
         </ul>
     </div>
     <h1>Bem-Vindos Tatuzeiros!</h1>
-    
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            
-            <img class="slidePic" src="img/tattoo1.jpg">
-            <!-- <div class="text">Eu e Riquinho</div> -->
+    <div class="container">
+        <div class="image">
+            <img src="logos/logoFull.png" alt="logo" height="180px" width="360px" id="img1">
         </div>
-    
-        <div class="mySlides fade">
-            
-            <img class="slidePic" src="img/tattoo4.jpg">
-            <div class="text">Belo Gatinho</div>
+        <div id="sobre">
+            <h2>Sobre.</h2>
+            <span>A Tatu Tatoo's é um estúdio de tatuagem que ....
+            </span>
         </div>
+    </div>
     
-        <div class="mySlides fade">
-            
-            <img class="slidePic" src="img/tattoo3.jpg">
-            <div class="text">Eu e Riquinho Novamente</div>
-        </div>
-    
-        <a class="prev" onclick="plusSlides(-1)">«</a>
-        <a class="next" onclick="plusSlides(1)">»</a>
-    
-        <!-- <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)">1</span>
-            <span class="dot" onclick="currentSlide(2)">2</span>
-            <span class="dot" onclick="currentSlide(3)">3</span>
-        </div> -->
-    
-      </div>
-
     <footer>
         <span>
             Tel: (42) 9946-5012 <br>
@@ -58,37 +40,5 @@
         </span>
 </footer>
 
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n){
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n){
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n){
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-
-        if(n > slides.length) {slideIndex = 1}
-        if(n < 1) {slideIndex = slides.length}
-
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";   
-        }
-
-        for(i = 0; i < dots.length; i++){
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-
-        // show current slide 
-        slides[slideIndex-1].style.display = "block";
-       
-    }
-</script>
 </body>
 </html>
