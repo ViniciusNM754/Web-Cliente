@@ -31,7 +31,6 @@ body{
 h1{
     color:white;
     text-align: center;
-    margin: 12px;
 }
 
 h2{
@@ -91,12 +90,6 @@ ul{
 
 #info span{
     font-size: 125%;
-    color: white;
-}
-
-#sobre span{
-    font-size: 125%;
-    color: white;
 }
 
 #info ul{
@@ -112,7 +105,7 @@ footer{
 
 .flex-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: space-evenly;
@@ -131,6 +124,7 @@ a{
     color: white;
     width: 30%;
     margin: 1.5%;
+    vertical-align: middle;
     font-size: 30px;
     border-collapse: collapse;
     border-color: darkslategray;
@@ -154,22 +148,16 @@ a{
     display: block;
     color: white;
     text-align: center;
-    margin-left: 15px;
     padding: 14px 16px;
     text-decoration: none;
 }
   
 #navbar li a:hover:not(.active) {
     background-color: rgb(121,223,180);
-}
+  }
 
 .active {
     background-color: rgb(121,223,180);
-}
-
-#logo img{
-    float: left;
-    margin: 15px;
 }
 
 .tatuadores-container{
@@ -188,6 +176,10 @@ a{
     margin-right: auto;
     display: block;
     max-width: 100%;
+}
+
+h2{
+    text-align: center;
 }
 
 h3{

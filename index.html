@@ -14,35 +14,6 @@
             <a href="produto.html">Nossos Produtos</a>
         </div>
     </main>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            
-            <img class="slidePic" src="img/tattoo1.jpg">
-            <!-- <div class="text">Eu e Riquinho</div> -->
-        </div>
-    
-        <div class="mySlides fade">
-            
-            <img class="slidePic" src="img/tattoo4.jpg">
-            <div class="text">Belo Gatinho</div>
-        </div>
-    
-        <div class="mySlides fade">
-            
-            <img class="slidePic" src="img/tattoo3.jpg">
-            <div class="text">Eu e Riquinho Novamente</div>
-        </div>
-    
-        <a class="prev" onclick="plusSlides(-1)">«</a>
-        <a class="next" onclick="plusSlides(1)">»</a>
-    
-        <!-- <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)">1</span>
-            <span class="dot" onclick="currentSlide(2)">2</span>
-            <span class="dot" onclick="currentSlide(3)">3</span>
-        </div> -->
-    
-      </div>
 
     <footer>
         <span>
@@ -52,39 +23,5 @@
         </span>
     </footer>
     
-    
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n){
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n){
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n){
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-
-        if(n > slides.length) {slideIndex = 1}
-        if(n < 1) {slideIndex = slides.length}
-
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";   
-        }
-
-        for(i = 0; i < dots.length; i++){
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-
-        // show current slide 
-        slides[slideIndex-1].style.display = "block";
-       
-    }
-</script>
-
 </body>
 </html>
