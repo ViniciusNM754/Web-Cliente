@@ -48,6 +48,7 @@ label{
 button{
     color: white;
     background-color: grey;
+    margin: 10px;
 }
 span{
     color:#333;
@@ -299,4 +300,16 @@ h3{
 
 .slideshow-container{
   width: 60%;
+}
+
+.forms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+#password, #login {
+    border-radius: 5px;
+    margin: 10px;
 }
