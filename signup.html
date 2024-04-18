@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="patterns.css">
+    <title>Cadastro</title>
+
+        
+</head>
+<body>
+    <main>
+        <h1>Cadastro</h1>
+        <h2>Preencha os campos abaixo para realizar seu cadastro.</h2>
+        <form enctype="UTF-8">
+            <label for="username">Nome:</label>
+            <input id= "username" type="text" name="username" required>
+            <br>
+            <label for="login">Login:</label>
+            <input id= "login" type="text" name="login" required>
+            <br>
+            <label for="password">Senha:</label>
+            <input id= "password" type="password" name="password" required>
+            <br>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
+    <script>
+        function appendToStorage(name, data){
+            var old = localStorage.getItem(name);
+            if(old === null){
+                old = "";
+                localStorage.setItem(name, old + data);
+            } 
+            localStorage.setItem(name, old + "," + data);
+        }
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            const data = new FormData(event.target);
+            const value = Object.fromEntries(data.entries());
+            const Json = JSON.stringify(value);
+            console.log({Json});
+            appendToStorage("account", Json);
+        }
+        const form = document.querySelector('form');
+        form.addEventListener('submit', handleSubmit);
+    </script>
+</body>

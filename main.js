@@ -9,7 +9,8 @@ document.querySelector("#entrar").addEventListener("click", function (){
         
         if(user === localStorage.getItem("username") && password === localStorage.getItem("password"))
         {
-            alert("Credenciais corretas");
+            //alert("Credenciais corretas");
+            location.replace("C:\\Users\\cmpsg\\Documentos\\UTFPR\\Periodo9\\Desenvolvimento Web\\Web-Cliente\\index.html");
         }
         else
         {
